@@ -1,5 +1,5 @@
 * {
-	padding: 0;
+	padding: 10;
 	margin: 0;
 	box-sizing: border-box;
 	--header: #5BC0BE;
@@ -8,6 +8,7 @@
 	--violet: #8A7090;
 	--gray: #3A506B;
 	font-family: 'Poppins', sans-serif;
+	margin-bottom: 0.5rem;
 }
 
 .header{
@@ -86,13 +87,19 @@ hr.dotted {
 	margin-bottom: 1rem;
 }
 
+.tab {
+	padding-left: 3%;
+	font-size: 110%;
+}
+
 /*fontawesome*/
 .fa {
-	padding: 20px;
+	padding: 10px;
 	font-size: 30px;
-	width: 50px;
+	width: 55px;
 	text-align: center;
 	text-decoration: none;
+	border-radius: 50%;
 }
 
 .fa:hover {
@@ -101,6 +108,16 @@ hr.dotted {
 
 .fa-linkedin {
 	background: #007bb5;
+	color: white;
+}
+
+.fa-instagram {
+	background: #ff9100;
+	color: black;
+}
+
+.fa-github {
+	background: #1d1d1d;
 	color: white;
 }
 
@@ -125,6 +142,17 @@ hr.dotted {
 .column {
 	float: left;
 	width: 50%;
+}
+
+.column2 {
+	float: left;
+	width: 33.25%;
+}
+
+.epigraph {
+	font-size: 100%;
+	text-align: center;
+	padding-right: 8%;
 }
   
 /* Clear floats after the columns */

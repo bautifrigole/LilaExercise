@@ -1,3 +1,4 @@
+// Animación del reloj de arena
 function hourglass() {
     var a;
     a = document.getElementById("anim-icon");
@@ -14,6 +15,7 @@ hourglass();
 setInterval(hourglass, 3000);
 
 
+// Contador del mundial
 function timeElapsedSince() {
     var date = new Date("Dec 18, 2022 16:08:48").getTime();
     var now = new Date().getTime();
@@ -24,7 +26,7 @@ function timeElapsedSince() {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   
-    // Display the result in the element
+    // Muestra el resultado en el elemento html
     document.getElementById("counter").innerHTML = days + "d " + hours + "h "
     + minutes + "m " + seconds + "s ";
   
@@ -38,6 +40,7 @@ timeElapsedSince();
 setInterval(timeElapsedSince, 1000);
 
 
+// Animación del cuadrado
 var id = null;
 function myMove() {
   var elem = document.getElementById("myAnimation");
@@ -56,15 +59,14 @@ function myMove() {
 } 
 
 
+// Manejo de Slideshow
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
